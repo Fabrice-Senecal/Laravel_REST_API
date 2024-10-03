@@ -1,0 +1,69 @@
+tables nécessaires
+
+beateau
+	id
+	type
+
+partie
+	ID
+    board1_id
+    board2_id
+
+missiles
+	id
+	position
+	int resultat //code 1-6 voir read me prof
+    board_id
+
+user
+    id
+	nom
+	token
+
+board
+    id
+    user_id
+
+position_bateaux_board
+    id
+    board_id
+    position_bateaux_id
+
+bateaux_positionnement
+    id
+    bateau_id
+    coordonnées
+
+/** V2 **/
+
+bateau
+	id
+	type
+    Varchar Json.encoded(positions)
+
+partie
+	ID
+    user_id
+    adversaire
+    Varchar liste bateau
+
+missiles
+	id
+	position
+	int resultat //code 1-6 voir read me prof
+
+user
+    id
+	nom
+	token
+
+todo
+retirer les controllers inutiles
+exemple : bateau, user
+car puisque nous conaissons deja les routes possiblement accessibles, les seules employées sont partie et peutêtre missile
+donc pour le reste des tables nous devons seulement conserver le modèle pour pouvoir créer l'instance en base de données
+de même, nous pouvons aussi retirer les ressources inutiles
+
+créer les algorithmes pour tirer missile et placer bateau dans un nouveau fichier php (voir le nouveau fichier Algorithmes)
+
+
