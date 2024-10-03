@@ -1,5 +1,7 @@
 # Projet API Laravel : Simulateur de Joueur Battleship
 
+auteurs: Fabrice Senécal et Cameron Chouinard
+
 Ce projet consiste à développer une **API REST en Laravel** qui simule un joueur pour le jeu Battleship. L'API permet de participer à des tournois en fournissant des points d'entrée spécifiques pour interagir avec le jeu.
 
 ## Fonctionnalités principales :
